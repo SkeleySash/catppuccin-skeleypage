@@ -3,14 +3,14 @@
 // Define preferred palette for light and dark mode
 // Available themes: latte, frappe, mocha, macchiato
 const preferredLightTheme = latte;
-const preferredDarkTheme = macchiato;
+const preferredDarkTheme = mocha;
 
 let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 
 const default_configuration = {
   overrideStorage: true,
   temperature: {
-    location: "London",
+    location: "Yagoona",
     scale: "C",
   },
   clock: {
@@ -19,8 +19,8 @@ const default_configuration = {
   },
   additionalClocks: [
     {
-      label: "UA",
-      timezone: "Europe/Kyiv",
+      label: "AU",
+      timezone: "Australia/Sydney",
       format: "h:i",
       icon_color: palette.peach,
     },
@@ -28,10 +28,23 @@ const default_configuration = {
   search: {
     engines: {
       p: ["https://www.perplexity.ai/search/?q=", "PerplexityAI"],
+      ddg: ["https://duckduckgo.com/?q=", "DuckDuckGo"],
       d: ["https://duckduckgo.com/?q=", "DuckDuckGo"],
       g: ["https://google.com/search?q=", "Google"],
+      c: ["https://www.copilot.com/search?q=", "Copilot"],
+      bi: ["https://www.bing.com/search?q=", "Bing"],
+      q: ["https://qwant.com/?q=", "Qwant"],
+      b: ["https://www.brave.com/search?q=", "Brave Search"],
+      y: ["https://search.yahoo.com/search?p=", "Yahoo"],
+      w: ["https://www.wikipedia.org/w/index.php?search=", "Wikipedia"],
+      s: ["https://www.startpage.com/do/search?query=", "StartPage"],
+      a: ["https://www.amazon.com/s?k=", "Amazon"],
+      e: ["https://www.ebay.com/sch/i.html?_nkw=", "eBay"],
+      r: ["https://www.reddit.com/search/?q=", "Reddit"],
+      y: ["https://www.youtube.com/results?search_query=", "YouTube"],
+      k: ["https://www.khanacademy.org/search?query=", "Khan Academy"],
     },
-    default: "d",
+    default: "b",
   },
   keybindings: {
     "s": "search-bar",
@@ -39,7 +52,7 @@ const default_configuration = {
   disabled: [],
   localIcons: true,
   localFonts: true,
-  fastlink: "https://www.perplexity.ai",
+  fastlink: "https://news.ycombinator.com/news",
   openLastVisitedTab: true,
   tabs: [
     {
