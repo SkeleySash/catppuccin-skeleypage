@@ -25,6 +25,8 @@
 
 A minimalistic and customisable startpage featuring the [**Catppuccin palettes**](https://catppuccin.com/palette). Designed for both aesthetics and functionality, with seamless hosting on GitHub Pages. This startpage is based on [`dawn`](https://github.com/b-coimbra/dawn), which offers additional functionality. I have refined the page to match my [`dotfiles`](https://github.com/pivoshenko/dotfiles); feel free to explore them as well.
 
+This is my fork of the startpage that fits more for my own personal need. Shared here on Github for others to see.
+
 ## 🧠 Main Principles
 
 - Minimalism in all aspects
